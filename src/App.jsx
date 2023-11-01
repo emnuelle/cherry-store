@@ -1,4 +1,5 @@
 import './App.css';
+import Carrossel from './components/Carrossel';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
 
       <br />
       <br />
-      <h1>coisas aqui depois</h1>
+      <Carrossel />
       <br />
       <br />
       
@@ -78,7 +79,7 @@ function App() {
             </ul>
           </div>
 
-        <div className='p-2'>
+        <div className='p-2 text-center'>
           <p>Cherry Store | todos os direitos reservados 2023.</p>
         </div>
 

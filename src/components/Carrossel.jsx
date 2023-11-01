@@ -1,0 +1,26 @@
+import { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+
+function Carrossel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img src="./public/slide-1.png" alt="" className="d-block w-100" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="./public/slide-2.png" alt="" className="d-block w-100" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="./public/slide-3.png" alt="" className="d-block w-100" />
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export default Carrossel;
