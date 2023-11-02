@@ -91,19 +91,19 @@ function App() {
           <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
             <CardComponent
               link="/"
-              imageUrl="caminho-para-imagem-1.jpg"
-              title="Card 3"
-              description="Descrição do Card 3"
-              valor="00.00"
+              imageUrl="./public/elvira.webp"
+              title="PRÉ-VENDA Boneca Monster High Skullector Elvira Mattel"
+              description="Anfitriã icônica do terror, damos as boas-vindas a Elvira em nossa série Monster High Skullector. "
+              valor="1.990,00"
             />
           </div>
           <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
             <CardComponent
               link="/"
-              imageUrl="caminho-para-imagem-1.jpg"
-              title="Card 4"
-              description="Descrição do Card 4"
-              valor="00.00"
+              imageUrl="./public/cinna.webp"
+              title="Keycap personalizado Cinnamoroll Sanrio"
+              description="Bonito teclado mecânico único, Backspace Enter Key."
+              valor="36,53"
             />
           </div>
         </div>
