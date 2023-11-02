@@ -18,3 +18,17 @@ footer .footer-link {
 .text-align-left {
     text-align: left;
 }
+
+.tituloProdutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    padding: 10px;
+    background-color: var(--bg-color-7);
+}
+
+.produtosCustom {
+    background: var(--bg-color-7);
+}
