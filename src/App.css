@@ -42,4 +42,17 @@ footer .footer-link {
 .imgPromo {
     background-color: var(--bg-color-7);
 }
+
+.tabela {
+
+    color: black;
+    background-color: var(--bg-color-7);
+}
+
+.tabela-componente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; 
+  }
   

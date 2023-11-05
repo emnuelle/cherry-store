@@ -4,6 +4,7 @@ import MyVerticallyCenteredModal from './components/MyModal';
 import CardComponent from './components/CardComponent';
 import Carrossel from './components/Carrossel';
 import CustomImage from './components/CustomImage';
+import Tabela from './components/Tabela';
 import './App.css';
 
 
@@ -120,10 +121,14 @@ function App() {
 
       <div className='row p-3 imgPromo'>
         <div className='col p-2'>
-        <CustomImage src="./public/img1-promo.png" alt="Promo Acessórios" fluid={true} />
+        <a href="/">
+          <CustomImage src="./public/img1-promo.png" alt="Promo Acessórios" fluid={true} />
+        </a>
         </div>
         <div className='col p-2'>
-        <CustomImage src="./public/img2-promo.png" alt="Promo calçados" fluid={true} />
+        <a href="/">
+          <CustomImage src="./public/img2-promo.png" alt="Promo calçados" fluid={true} />
+        </a>
         </div>
       </div>
 
@@ -180,6 +185,14 @@ function App() {
           onHide={() => setModalShow(false)}
         />
       </div>
+
+      <div className='tabela p-3 text-center'>
+        <h4> Tabela de medidas </h4>
+        <div className="tabela-componente">
+          <Tabela />
+        </div>
+      </div>
+
 
 
 
