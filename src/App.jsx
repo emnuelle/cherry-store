@@ -1,8 +1,17 @@
-import "./App.css";
-import Carrossel from "./components/Carrossel";
-import CardComponent from "./components/CardComponent";
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button'; 
+import MyVerticallyCenteredModal from './components/MyModal';
+import CardComponent from './components/CardComponent';
+import Carrossel from './components/Carrossel';
+import CustomImage from './components/CustomImage';
+import './App.css';
+
+
 
 function App() {
+
+  const [modalShow, setModalShow] = useState(false); 
+
   return (
     <>
       <header>
@@ -108,6 +117,71 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className='row p-3 imgPromo'>
+        <div className='col p-2'>
+        <CustomImage src="./public/img1-promo.png" alt="Promo Acessórios" fluid={true} />
+        </div>
+        <div className='col p-2'>
+        <CustomImage src="./public/img2-promo.png" alt="Promo calçados" fluid={true} />
+        </div>
+      </div>
+
+      <div className="produtos produtosCustom p-1 ">
+        <div className="row p-1">
+          <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
+            <CardComponent
+              link="/"
+              imageUrl="./public/miku.webp"
+              title="Figure HATSUNE MIKU"
+              description="Figuras de Ação Movíveis Articulações Conter Os Adereços Desktop Decoração Coleção Modelo PVC."
+              valor="125,70"
+            />
+          </div>
+          <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
+            <CardComponent
+              link="/"
+              imageUrl="./public/bibble.webp"
+              title="
+              Bibble de pelúcia"
+              description="Bibble da Barbie Fairytopia de pulúcia"
+              valor="39,90"
+            />
+          </div>
+          <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
+            <CardComponent
+              link="/"
+              imageUrl="./public/SIOUX.webp"
+              title="Kaleidoscope LP"
+              description="Um álbum único que combina rock psicodélico, folk e influências étnicas, proporcionando uma experiência sonora envolvente e cativante."
+              valor="129,90"
+            />
+          </div>
+          <div className="col-6 col-md-3 p-2 d-flex justify-content-center">
+            <CardComponent
+              link="/"
+              imageUrl="./public/anya.webp"
+              title="Figure Anya Forger de Spy X Family em PVC"
+              description=" Um lindo modelo de coleção baseado no popular anime Spy X Family. Esta figura cativante é perfeita para fãs da série e colecionadores."
+              valor="76,59"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="botaoModal text-center p-4">
+            <Button className="p-2" variant='light' onClick={() => setModalShow(true)}>
+              Clique para saber mais sobre a nossa políticas de entrega.
+            </Button>
+        </div>
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </div>
+
+
 
       <footer className="text-center text-lg-start custom-navbar-bg text-muted">
         <div className="row p-3">

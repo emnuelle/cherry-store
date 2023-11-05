@@ -1,5 +1,7 @@
-html {
-    background-color: var(--bg-color-7);
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    color: var(--bg-color-7);
 }
 
 a {
@@ -12,7 +14,7 @@ li {
 
 footer .footer-link {
     text-decoration: none; 
-    color: var(--bg-color-2);
+    color: var(--bg-color-3);
 }
 
 .text-align-left {
@@ -32,3 +34,12 @@ footer .footer-link {
 .produtosCustom {
     background: var(--bg-color-7);
 }
+
+.botaoModal {
+    background-color: var(--bg-color-7);
+}
+
+.imgPromo {
+    background-color: var(--bg-color-7);
+}
+  
